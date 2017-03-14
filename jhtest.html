@@ -1,18 +1,18 @@
 <html><h1>BBBBBBB</h1><body>.<br/><img src="/private/var/mobile/Containers/Data/Application/138A38D8-7017-4E5B-B6A4-A8E19A67F8E5/tmp/chartlet/collection/jh.jpg"/>
-imgAddress<input type="text" id="address" value="15515"><br/>
-<!-- Password <input type="password" id="pwd" value="123456"><br/> -->
-img<img src="" id="pic" >
+Account<input type="text" id="account" value="15515"><br/>
+Password <input type="password" id="pwd" value="123456"><br/>
+address<input type="text" id="txt" value="http://img02.tooopen.com/images/20140504/sy_60294738471.jpg">
+img<img src="">
 <input type="button" value="Show Values" onclick="getValue()">
 <hr/>
 <p id="show"></p>
 
 <script type="">
-    // var p = document.getElementById("pwd").value;
+	    var a = document.getElementById("account").value;
+    var p = document.getElementById("pwd").value;
+    var d = document.getElementById("txt").value;
     function getValue() {
-    	var a = document.getElementById("address").value;
-        document.getElementById("show").innerHTML = "address: " + a + "<br/>";
-        var img = document.getElementById("pic");
-        img.src = a;
+        document.getElementById("show").innerHTML = "Account: " + a + "<br/>" + "Password: " + p + "<br/>" + d;
     }
 
 </script>
